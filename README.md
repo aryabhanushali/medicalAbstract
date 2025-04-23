@@ -1,16 +1,1 @@
-The healthRecord class serves as a template for storing basic patient information, such as first name, last name, and unpaid bills, 
-and declares several abstract methods for calculating age, checking if a patient is deceased, calculating unpaid bills, and displaying records.
-The subclasses, medicalHistoryRecord and pathologyRecord, extend this base class by implementing these abstract methods and adding specific fields related 
-to medical history (like birthplace, diagnosis, weight, and height) and pathology (like blood type, blood count, and any blood abnormalities).
-Both subclasses override the abstract methods to provide functionality tailored to their specific medical context, such as calculating age, assessing a patient’s
-health status, and determining the total unpaid balance, including any additional costs from medical procedures or medications. 
-The classes also include methods to display detailed patient records, providing a comprehensive overview of a patient’s medical or pathology history.
-
-
-1/2
-
-
-
-
-
-
+This Java program simulates a comprehensive electronic medical records system with a focus on pathology and medical history records. It uses an object-oriented design where an abstract class healthRecord defines shared attributes and methods like patient name, unpaid bills, age calculation, and billing logic. Two concrete subclasses, pathologyRecord and medicalHistoryRecord, extend this class to represent specific types of patient data. The pathologyRecord class handles attributes like blood type, blood count, abnormalities, and medication prescriptions, while medicalHistoryRecord includes birth location, diagnosis, height, weight, and computes the patient's BMI. Each class implements logic to determine if the patient is deceased based on medical indicators like blood count or diagnosis, and both calculate total bills by combining visit costs and unpaid balances. The program's Main class demonstrates how multiple patient records can be created, processed, and displayed. It uses the Date class to compare birthdates and current dates for age estimation, and prints each patient's health summary, diagnosis, and billing details. Overall, this program showcases inheritance, method overriding, and real-world healthcare modeling through Java classes and basic date manipulation.
